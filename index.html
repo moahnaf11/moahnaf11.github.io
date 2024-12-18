@@ -1,256 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Homepage</title>
-</head>
-<body>
+  </head>
+  <body>
     <section>
-        <header>
-            <img src="./images/webdev.jpg" alt="web dev image">
-            <div class="custom-shape-divider-top-1722852341">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,0V6c0,21.6,291,111.46,741,110.26,445.39,3.6,459-88.3,459-110.26V0Z" class="shape-fill"></path>
-                </svg>
-            </div>
-            <div class="intro">
-                <h1>About Me</h1>
-                <p>
-                    Hello! My name is Mohammad Ahnaf, and I am a passionate web developer and designer with a keen eye for detail and a love for creating dynamic, user-friendly websites. With a strong foundation in Python, JavaScript, React, Node.js, Express.js, Passport.js, PostgreSQL, Prisma ORM, HTML, CSS and TailwindCSS, I have the skills and expertise to bring your digital vision to life.
-                </p>
-                <div class="icon-container">
-                    <a href="https://github.com/moahnaf11" target="_blank">
-                        <img src="./images/github.svg" alt="github icon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/mohammad-ahnaf-274501302/?trk=opento_sprofile_details" target="_blank">
-                        <img src="./images/linkedin.svg" alt="linkedin">
-                    </a>
-                </div>
-            </div>
-        </header>
+      <header>
+        <img src="./images/webdev.jpg" alt="web dev image" />
+        <div class="custom-shape-divider-top-1722852341">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V6c0,21.6,291,111.46,741,110.26,445.39,3.6,459-88.3,459-110.26V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+        <div class="intro">
+          <h1>About Me</h1>
+          <p>
+            Hello! My name is Mohammad Ahnaf, and I am a passionate web
+            developer and designer with a keen eye for detail and a love for
+            creating dynamic, user-friendly websites. With a strong foundation
+            in Python, JavaScript, React, Node.js, Express.js, Passport.js,
+            PostgreSQL, Prisma ORM, HTML, CSS and TailwindCSS, I have the skills
+            and expertise to bring your digital vision to life.
+          </p>
+          <div class="icon-container">
+            <a href="https://github.com/moahnaf11" target="_blank">
+              <img src="./images/github.svg" alt="github icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mohammad-ahnaf-274501302/?trk=opento_sprofile_details"
+              target="_blank"
+            >
+              <img src="./images/linkedin.svg" alt="linkedin" />
+            </a>
+          </div>
+        </div>
+      </header>
     </section>
-    
+
     <main>
-        <section>
-            <h2>My Work</h2>
-            <div class="grid-container">
-                <div class="cards">
-                    <h3>Blog API</h3>
-                    <img src="./images/blog.png" alt="blog api project">
-                    <div class="text-icon">
-                        <p>Created a REST API backend to interact with the front end. Users are able to register an account as an author or a user and login. Authors are able to CRUD posts and comment on other posts. Users are able to CRUD comments and view posts. Enabled user authentication using jsonwebtoken storing the token on the client in LocalStorage. Handled all database queries using prisma. Styled app using TailwindCSS. Created frontend usind React and handled client side routing using React Router</p>
-                        <div>
-                            <a href="https://github.com/moahnaf11/Blog-API" target="_blank"><img src="./images/github.svg" alt="github icon"></a>
-                            <a href="https://myblogshaven.netlify.app" target="_blank"><img src="./images/open.svg" alt="open in new icon"></a>
-                        </div>
-
-                    </div>
-                    
-                </div>
-
-                <div class="cards">
-                    <h3>File Uploader</h3>
-                    <img src="./images/fileuploader.png" alt="file Uploader project">
-                    <div class="text-icon">
-                        <p>A stripped down version of Google Drive! Users can sign up with an account and log in. Implemented the passport.js LocalStrategy for authenticating users upon Log In. Stored user credentials in a postgreSQL database modelled using prisma! Hashed user passwords for extra security using bcryptjs. Conducted server-side form validations for the sign up and log in forms and displayed proper error messages to enhance user experience and provide proper guidance on the expected input fields! Users are able to CRUD(Create, Read, Update, Delete) folders and upload files inside them.</p>
-                        <div>
-                            <a href="https://github.com/moahnaf11/File-Uploader" target="_blank"><img src="./images/github.svg" alt="github icon"></a>
-                            <a href="https://file-uploader-production-a67a.up.railway.app/" target="_blank"><img src="./images/open.svg" alt="open in new icon"></a>
-                        </div>
-
-                    </div>
-                    
-                </div>
-                
-
-                <div class="cards">
-                    <h3>Shopping Cart</h3>
-                    <img src="./images/shopping.png" alt="shopping cart project">
-                    <div class="text-icon">
-                        <p>Created a template online shopping site using data from fakeStore API! Implemented a live search filter as well as a sort by price feature. Used React concepts including the React Router to form a multipage shopping site. Also implemented unit tests using the RTL (React testing library) library. Made custom error pages to handle bad URL endpoints! Cached the data fetched from API so it only fetches on app mount to minimise load times</p>
-                        <div>
-                            <a href="https://github.com/moahnaf11/Shopping-Cart" target="_blank"><img src="./images/github.svg" alt="github icon"></a>
-                            <a href="https://ahnafsshoppingcart.netlify.app/" target="_blank"><img src="./images/open.svg" alt="open in new icon"></a>
-                        </div>
-
-                    </div>
-                    
-                </div>
-
-
-
-                <div class="cards">
-                    <h3>CV App</h3>
-                    <img src="./images/cv.png" alt="cv project">
-                    <div class="text-icon">
-                        <p>Generate your CV on the fly using my cv generator, featuring download and print functionality. Made use of React state hooks. Used the react to print library to implement a pdf download and print function</p>
-                        <div>
-                            <a href="https://github.com/moahnaf11/CV-App" target="_blank"><img src="./images/github.svg" alt="github icon"></a>
-                            <a href="https://ahnafscvapp.netlify.app" target="_blank"><img src="./images/open.svg" alt="open in new icon"></a>
-                        </div>
-
-                    </div>
-                    
-                </div>
-
-                <div class="cards">
-                    <h3>To Do List</h3>
-                    <img src="./images/todolist.png" alt="to do list project">
-                    <div class="text-icon">
-                        <p>Created a To Do List application using JS HTML CSS and Webpack to bundle all files together. Used javascript OOP principles to create project folders using javascript classes as well as a task object using classes to hold tasks inside of project folders. Also used the date-fns library for date manipulation and to display tasks due within a month!</p>
-                        <div>
-                            <a href="https://github.com/moahnaf11/To-Do-List" target="_blank"><img src="./images/github.svg" alt="github icon"></a>
-                            <a href="https://moahnaf11.github.io/To-Do-List/" target="_blank"><img src="./images/open.svg" alt="open in new icon"></a>
-                        </div>
-
-
-                    </div>
-                    
-                </div>
-
-                <div class="cards">
-                    <h3>Memory card game</h3>
-                    <img src="./images/memory.png" alt="memory card game project">
-                    <div class="text-icon">
-                        <p>Created a simple memory cards game using the React library, making use of React hooks. Used the PokeAPI to fetch pokemon images on app mount. Test your memory, try and get all 16 points</p>
-                        <div>
-                            <a href="https://github.com/moahnaf11/Memory-Card" target="_blank"><img src="./images/github.svg" alt="github icon"></a>
-                            <a href="https://ahnafsmemorygame.netlify.app/" target="_blank"><img src="./images/open.svg" alt="open in new icon"></a>
-                        </div>
-
-
-
-                    </div>
-                   
-                </div>
-
-                <div class="cards">
-                    <h3>Weather App</h3>
-                    <img src="./images/weather.png" alt="weather app project">
-                    <div class="text-icon">
-                        <p>Track the weather with this App! Made using Visual Crossing API! Used javascript HTML CSS to design a weather app using the Grid layout in CSS. Implemented a converter between Celsius and Fahrenheit. Used JS DOM manipulation concepts to display data from the API</p>
-                        <div>
-                            <a href="https://github.com/moahnaf11/Weather-App" target="_blank"><img src="./images/github.svg" alt="github icon"></a>
-                            <a href="https://moahnaf11.github.io/Weather-App/" target="_blank"><img src="./images/open.svg" alt="open in new icon"></a>
-                        </div>
-
-
-
-                    </div>
-                   
-                </div>
-
-                <div class="cards">
-                    <h3>Battleship</h3>
-                    <img src="./images/battleship.png" alt="battleship project">
-                    <div class="text-icon">
-                        <p>Recreated the online battleship game using JS HTML CSS and webpack for file managing and bundling! Implemented JS OOP concepts with the use of javascript classes to create Gameboard, Player and Ship classes! Applied a random ship placement function for the user. Enhanced Computer AI by implementing a Level Order Traversal algorithm with the use of the queue data structure to enable computer to attack adjacent ships! Try and sink all the computer's ships!</p>
-                        <div>
-                            <a href="https://github.com/moahnaf11/Battleship" target="_blank"><img src="./images/github.svg" alt="github icon"></a>
-                            <a href="https://moahnaf11.github.io/Battleship/" target="_blank"><img src="./images/open.svg" alt="open in new icon"></a>
-                        </div>
-
-
-                    </div>
-                    
-                </div>
-
-
-                <div class="cards">
-                    <h3>Python Countdown Timer</h3>
-                    <img src="./images/timer.png" alt="timer project">
-                    <div class="text-icon">
-                        <p>Created a Python Timer app using tkinter! Used Python OOP principles with the use of classes to create each part of the apps layout! Added functionality to support date inputs in 3 formats! Also added a beep sound once timer ends as well as a snooze button to pause the beep. Used various python libraries for formatting date and time to show a countdown!</p>
-                        <div>
-                            <a href="https://github.com/moahnaf11/CountDown-Timer" target="_blank"><img src="./images/github.svg" alt="github icon"></a>
-                            <a href="https://www.youtube.com/watch?v=ivRIr-tgw4w&feature=youtu.be" target="_blank"><img src="./images/open.svg" alt="open in new icon"></a>
-                        </div>
-
-                    </div>
-                    
-                </div>
-
-                <div class="cards">
-                    <h3>Restaurant Page</h3>
-                    <img src="./images/rest.png" alt="restaurant page project">
-                    <div class="text-icon">
-                        <p>Made a template restaurant page including menu, contact and about tabs! Made using Javascript HTML and CSS! Bundled files using Webpack! Implemented various DOM manipulation techniques </p>
-                        <div>
-                            <a href="https://github.com/moahnaf11/Restaurant-Page" target="_blank"><img src="./images/github.svg" alt="github icon"></a>
-                            <a href="https://moahnaf11.github.io/Restaurant-Page/" target="_blank"><img src="./images/open.svg" alt="open in new icon"></a>
-                        </div>
-
-
-                    </div>
-                    
-                </div>
-
-
-                <div class="cards">
-                    <h3>calculator</h3>
-                    <img src="./images/calc.png" alt="calculator project">
-                    <div class="text-icon">
-                        <p>Calculator made using JavaScript/HTML/CSS with keyboard support! Used JS DOM manipulation techniques as well as event handlers for the keyboard support</p>
-                        <div>
-                            <a href="https://github.com/moahnaf11/Calculator" target="_blank"><img src="./images/github.svg" alt="github icon"></a>
-                            <a href="https://moahnaf11.github.io/Calculator/" target="_blank"><img src="./images/open.svg" alt="open in new icon"></a>
-                        </div>
-
-
-                    </div>
-                    
-                </div>
-        
-                <div class="cards">
-                    <h3>Admin Dashboard</h3>
-                    <img src="./images/dashboard.png" alt="dashboard project">
-                    <div class="text-icon">
-                        <p>Created a template admin dashboard using HTML and CSS! Made using CSS Grid layouts and as well as Flexbox</p>
-                        <div>
-                            <a href="https://github.com/moahnaf11/Admin-Dashboard" target="_blank"><img src="./images/github.svg" alt="github icon"></a>
-                            <a href="https://moahnaf11.github.io/Admin-Dashboard/" target="_blank"><img src="./images/open.svg" alt="open in new icon"></a>
-                        </div>
-
-
-                    </div>
-                    
-                </div>
-
+      <section>
+        <h2>My Work</h2>
+        <div class="grid-container">
+          <div class="cards">
+            <h3>Blog API</h3>
+            <img src="./images/blog.png" alt="blog api project" />
+            <div class="text-icon">
+              <p>
+                Created a REST API backend to interact with the front end. Users
+                are able to register an account as an author or a user and
+                login. Authors are able to CRUD posts and comment on other
+                posts. Users are able to CRUD comments and view posts. Enabled
+                user authentication using jsonwebtoken storing the token on the
+                client in LocalStorage. Handled all database queries using
+                prisma. Styled app using TailwindCSS. Created frontend usind
+                React and handled client side routing using React Router
+              </p>
+              <div>
+                <a href="https://github.com/moahnaf11/Blog-API" target="_blank"
+                  ><img src="./images/github.svg" alt="github icon"
+                /></a>
+              </div>
             </div>
-        </section>
+          </div>
+
+          <div class="cards">
+            <h3>File Uploader</h3>
+            <img src="./images/fileuploader.png" alt="file Uploader project" />
+            <div class="text-icon">
+              <p>
+                A stripped down version of Google Drive! Users can sign up with
+                an account and log in. Implemented the passport.js LocalStrategy
+                for authenticating users upon Log In. Stored user credentials in
+                a postgreSQL database modelled using prisma! Hashed user
+                passwords for extra security using bcryptjs. Conducted
+                server-side form validations for the sign up and log in forms
+                and displayed proper error messages to enhance user experience
+                and provide proper guidance on the expected input fields! Users
+                are able to CRUD(Create, Read, Update, Delete) folders and
+                upload files inside them.
+              </p>
+              <div>
+                <a
+                  href="https://github.com/moahnaf11/File-Uploader"
+                  target="_blank"
+                  ><img src="./images/github.svg" alt="github icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards">
+            <h3>Shopping Cart</h3>
+            <img src="./images/shopping.png" alt="shopping cart project" />
+            <div class="text-icon">
+              <p>
+                Created a template online shopping site using data from
+                fakeStore API! Implemented a live search filter as well as a
+                sort by price feature. Used React concepts including the React
+                Router to form a multipage shopping site. Also implemented unit
+                tests using the RTL (React testing library) library. Made custom
+                error pages to handle bad URL endpoints! Cached the data fetched
+                from API so it only fetches on app mount to minimise load times
+              </p>
+              <div>
+                <a
+                  href="https://github.com/moahnaf11/Shopping-Cart"
+                  target="_blank"
+                  ><img src="./images/github.svg" alt="github icon"
+                /></a>
+                <a
+                  href="https://ahnafsshoppingcart.netlify.app/"
+                  target="_blank"
+                  ><img src="./images/open.svg" alt="open in new icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards">
+            <h3>CV App</h3>
+            <img src="./images/cv.png" alt="cv project" />
+            <div class="text-icon">
+              <p>
+                Generate your CV on the fly using my cv generator, featuring
+                download and print functionality. Made use of React state hooks.
+                Used the react to print library to implement a pdf download and
+                print function
+              </p>
+              <div>
+                <a href="https://github.com/moahnaf11/CV-App" target="_blank"
+                  ><img src="./images/github.svg" alt="github icon"
+                /></a>
+                <a href="https://ahnafscvapp.netlify.app" target="_blank"
+                  ><img src="./images/open.svg" alt="open in new icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards">
+            <h3>To Do List</h3>
+            <img src="./images/todolist.png" alt="to do list project" />
+            <div class="text-icon">
+              <p>
+                Created a To Do List application using JS HTML CSS and Webpack
+                to bundle all files together. Used javascript OOP principles to
+                create project folders using javascript classes as well as a
+                task object using classes to hold tasks inside of project
+                folders. Also used the date-fns library for date manipulation
+                and to display tasks due within a month!
+              </p>
+              <div>
+                <a
+                  href="https://github.com/moahnaf11/To-Do-List"
+                  target="_blank"
+                  ><img src="./images/github.svg" alt="github icon"
+                /></a>
+                <a
+                  href="https://moahnaf11.github.io/To-Do-List/"
+                  target="_blank"
+                  ><img src="./images/open.svg" alt="open in new icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards">
+            <h3>Memory card game</h3>
+            <img src="./images/memory.png" alt="memory card game project" />
+            <div class="text-icon">
+              <p>
+                Created a simple memory cards game using the React library,
+                making use of React hooks. Used the PokeAPI to fetch pokemon
+                images on app mount. Test your memory, try and get all 16 points
+              </p>
+              <div>
+                <a
+                  href="https://github.com/moahnaf11/Memory-Card"
+                  target="_blank"
+                  ><img src="./images/github.svg" alt="github icon"
+                /></a>
+                <a href="https://ahnafsmemorygame.netlify.app/" target="_blank"
+                  ><img src="./images/open.svg" alt="open in new icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards">
+            <h3>Weather App</h3>
+            <img src="./images/weather.png" alt="weather app project" />
+            <div class="text-icon">
+              <p>
+                Track the weather with this App! Made using Visual Crossing API!
+                Used javascript HTML CSS to design a weather app using the Grid
+                layout in CSS. Implemented a converter between Celsius and
+                Fahrenheit. Used JS DOM manipulation concepts to display data
+                from the API
+              </p>
+              <div>
+                <a
+                  href="https://github.com/moahnaf11/Weather-App"
+                  target="_blank"
+                  ><img src="./images/github.svg" alt="github icon"
+                /></a>
+                <a
+                  href="https://moahnaf11.github.io/Weather-App/"
+                  target="_blank"
+                  ><img src="./images/open.svg" alt="open in new icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards">
+            <h3>Battleship</h3>
+            <img src="./images/battleship.png" alt="battleship project" />
+            <div class="text-icon">
+              <p>
+                Recreated the online battleship game using JS HTML CSS and
+                webpack for file managing and bundling! Implemented JS OOP
+                concepts with the use of javascript classes to create Gameboard,
+                Player and Ship classes! Applied a random ship placement
+                function for the user. Enhanced Computer AI by implementing a
+                Level Order Traversal algorithm with the use of the queue data
+                structure to enable computer to attack adjacent ships! Try and
+                sink all the computer's ships!
+              </p>
+              <div>
+                <a
+                  href="https://github.com/moahnaf11/Battleship"
+                  target="_blank"
+                  ><img src="./images/github.svg" alt="github icon"
+                /></a>
+                <a
+                  href="https://moahnaf11.github.io/Battleship/"
+                  target="_blank"
+                  ><img src="./images/open.svg" alt="open in new icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards">
+            <h3>Python Countdown Timer</h3>
+            <img src="./images/timer.png" alt="timer project" />
+            <div class="text-icon">
+              <p>
+                Created a Python Timer app using tkinter! Used Python OOP
+                principles with the use of classes to create each part of the
+                apps layout! Added functionality to support date inputs in 3
+                formats! Also added a beep sound once timer ends as well as a
+                snooze button to pause the beep. Used various python libraries
+                for formatting date and time to show a countdown!
+              </p>
+              <div>
+                <a
+                  href="https://github.com/moahnaf11/CountDown-Timer"
+                  target="_blank"
+                  ><img src="./images/github.svg" alt="github icon"
+                /></a>
+                <a
+                  href="https://www.youtube.com/watch?v=ivRIr-tgw4w&feature=youtu.be"
+                  target="_blank"
+                  ><img src="./images/open.svg" alt="open in new icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards">
+            <h3>Restaurant Page</h3>
+            <img src="./images/rest.png" alt="restaurant page project" />
+            <div class="text-icon">
+              <p>
+                Made a template restaurant page including menu, contact and
+                about tabs! Made using Javascript HTML and CSS! Bundled files
+                using Webpack! Implemented various DOM manipulation techniques
+              </p>
+              <div>
+                <a
+                  href="https://github.com/moahnaf11/Restaurant-Page"
+                  target="_blank"
+                  ><img src="./images/github.svg" alt="github icon"
+                /></a>
+                <a
+                  href="https://moahnaf11.github.io/Restaurant-Page/"
+                  target="_blank"
+                  ><img src="./images/open.svg" alt="open in new icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards">
+            <h3>calculator</h3>
+            <img src="./images/calc.png" alt="calculator project" />
+            <div class="text-icon">
+              <p>
+                Calculator made using JavaScript/HTML/CSS with keyboard support!
+                Used JS DOM manipulation techniques as well as event handlers
+                for the keyboard support
+              </p>
+              <div>
+                <a
+                  href="https://github.com/moahnaf11/Calculator"
+                  target="_blank"
+                  ><img src="./images/github.svg" alt="github icon"
+                /></a>
+                <a
+                  href="https://moahnaf11.github.io/Calculator/"
+                  target="_blank"
+                  ><img src="./images/open.svg" alt="open in new icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cards">
+            <h3>Admin Dashboard</h3>
+            <img src="./images/dashboard.png" alt="dashboard project" />
+            <div class="text-icon">
+              <p>
+                Created a template admin dashboard using HTML and CSS! Made
+                using CSS Grid layouts and as well as Flexbox
+              </p>
+              <div>
+                <a
+                  href="https://github.com/moahnaf11/Admin-Dashboard"
+                  target="_blank"
+                  ><img src="./images/github.svg" alt="github icon"
+                /></a>
+                <a
+                  href="https://moahnaf11.github.io/Admin-Dashboard/"
+                  target="_blank"
+                  ><img src="./images/open.svg" alt="open in new icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <section>
-            <div class="footer-wrapper">
-                <h2>Contact Me</h2>
-                <p>If you like my work and are looking for a dedicated web developer and designer to bring your project to life, I’d love to hear from you! Whether you have a specific idea in mind or need some guidance on the best way to achieve your digital goals, I’m here to help.</p>
-                <p>Ajman, UAE</p>
-                <div class="tel">
-                    <img src="./images/phone.svg" alt="phone icon">
-                    <div>0553002058</div>
-                </div>
-                <div class="mail">
-                    <img src="./images/gmail.svg" alt="mail icon">
-                    <div>mohammadahnaf123@gmail.com</div>
-                </div>
-                <div class="link-container">
-                    <a href="https://github.com/moahnaf11" target="_blank">
-                        <img src="./images/github.svg" alt="github icon">
-                    </a>
-                    <a href="https://www.linkedin.com/in/mohammad-ahnaf-274501302/?trk=opento_sprofile_details">
-                        <img src="./images/linkedin.svg" alt="linkedin icon">
-                    </a>
-                </div>
-            </div>
-            <img src="./images/code.jpg" alt="placeholder image">
-
-        </section>
+      <section>
+        <div class="footer-wrapper">
+          <h2>Contact Me</h2>
+          <p>
+            If you like my work and are looking for a dedicated web developer
+            and designer to bring your project to life, I’d love to hear from
+            you! Whether you have a specific idea in mind or need some guidance
+            on the best way to achieve your digital goals, I’m here to help.
+          </p>
+          <p>Ajman, UAE</p>
+          <div class="tel">
+            <img src="./images/phone.svg" alt="phone icon" />
+            <div>0553002058</div>
+          </div>
+          <div class="mail">
+            <img src="./images/gmail.svg" alt="mail icon" />
+            <div>mohammadahnaf123@gmail.com</div>
+          </div>
+          <div class="link-container">
+            <a href="https://github.com/moahnaf11" target="_blank">
+              <img src="./images/github.svg" alt="github icon" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mohammad-ahnaf-274501302/?trk=opento_sprofile_details"
+            >
+              <img src="./images/linkedin.svg" alt="linkedin icon" />
+            </a>
+          </div>
+        </div>
+        <img src="./images/code.jpg" alt="placeholder image" />
+      </section>
     </footer>
-
-
-    
-</body>
+  </body>
 </html>
